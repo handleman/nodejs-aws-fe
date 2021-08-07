@@ -24,7 +24,10 @@ const useStyles = makeStyles((theme: Theme) =>
     homeLink: {
       color: 'white',
       textDecoration: 'none'
-    }
+    },
+    customHeader:{
+      backgroundColor: theme.palette.secondary.dark
+    },
   }),
 );
 
@@ -43,7 +46,7 @@ export default function Header() {
   };
 
   return (
-    <AppBar position="relative">
+    <AppBar position="relative" className={classes.customHeader}>
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
           <Link className={classes.homeLink} to="/">My Comix Store!</Link>
