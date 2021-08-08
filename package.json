@@ -9,7 +9,7 @@
     "eject": "react-scripts eject",
     "deploy:init": "serverless deploy", 
     "deploy:static": "serverless client deploy --no-config-change --no-policy-change --no-cors-change",
-    "build:deploy:static": "npm run buld && npm run deploy:static"
+    "build:deploy:static": "npm run build && npm run deploy:static"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
