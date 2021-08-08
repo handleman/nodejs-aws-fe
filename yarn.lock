@@ -10978,6 +10978,10 @@
     "minimatch" "^3.0.4"
     "prompt-confirm" "^1.2.0"
 
+"serverless-single-page-app-plugin@file:./serverless-single-page-app-plugin":
+  "resolved" "file:serverless-single-page-app-plugin"
+  "version" "1.0.0"
+
 "set-blocking@^2.0.0":
   "integrity" "sha1-BF+XgtARrppoA93TgrJDkrPYkPc="
   "resolved" "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz"

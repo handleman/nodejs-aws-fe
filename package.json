@@ -7,7 +7,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy:aws": "serverless client deploy --no-config-change --no-policy-change --no-cors-change"
+    "deploy:init": "serverless deploy", 
+    "deploy:static": "serverless client deploy --no-config-change --no-policy-change --no-cors-change",
+    "build:deploy:static": "npm run buld && npm run deploy:static"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -40,7 +42,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0"
+    "@types/jest": "^24.0.0",
+    "serverless-single-page-app-plugin": "file:./serverless-single-page-app-plugin"
   },
   "eslintConfig": {
     "extends": "react-app"
